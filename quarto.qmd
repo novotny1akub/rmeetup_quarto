@@ -1,0 +1,113 @@
+---
+title: "Fifty Shades of Quarto"
+author: "Jakub Novotný"
+format:
+  revealjs:
+    theme: sky
+    slide-number: true
+    chalkboard: true
+revealjs-plugins:
+  - confetti
+filters:
+   - nutshell
+---
+
+## What is Quarto?
+
+[:Definition & Hello World Example](#definition)
+
+[:Quarto Possible Outputs](#outputs)
+
+[:Quarto Output Formats](#output-formats)
+
+### :x definition
+
+Plain text language that can combine [plots, tables and narrative text]{.underline} into a high-quality, [dynamic]{.underline} output document.
+
+New generation of R Markdown, emerged around 2020.
+
+![](example.png){width="600"}
+
+### :x outputs
+
+articles, reports
+
+presentations
+
+websites, blogs, books
+
+and more
+
+### :x output-formats
+
+HTML
+
+PDF
+
+MS Word, MS PowerPoint
+
+### 
+
+![](https://quarto.org/quarto.png){fig-align="right"}
+
+## Is qmd different than rmd?
+
+-   R user vs non-R user perspective
+-   reticulate and JuliaCall
+-   [non-R book example](https://wesmckinney.com/book/)
+-   no R dependency, VS Code IDE support etc.
+
+![](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png){fig-align="right"}
+
+## Why Quarto with R?
+
+-   new features possibly not in rmd
+-   improved documentation (e.g. reveal.js)
+-   OJS aka Observable aka observablehq ecosystem
+    -   [OJS inputs](https://observablehq.com/@observablehq/inputs)
+
+    -   arquero.js
+
+    -   Plot.js, vegalite.js, d3.js
+
+    -   Tabulator.js, AG Grid
+
+## Examples of Quarto
+
+-   Quarto for presentations
+-   Quarto for BI
+
+## Presentation Examples
+
+-   This very presentation :-)
+
+-   [Posit example](https://quarto.org/docs/presentations/revealjs/demo/) (code, backgrounds, animations)
+
+-   Extensions (Confetti.js)
+
+-   [:Lua filters](#lua-filters)
+
+### :x lua-filters
+
+Nutshell.js
+
+## BI Examples
+
+[D3 Gallery](https://observablehq.com/@d3/gallery)
+
+```{ojs}
+import { chart as ch1 } from  "@d3/bar-chart-race"
+
+ch1
+
+```
+
+## BI Examples
+[Not-shiny Geyser](./qmd_examples/5_geyser.html)
+
+[D3 hierarchies with bootstrap](./qmd_examples/6_hierarchies_d3.html)
+
+[Dashboard](./qmd_examples/25_custom_css.html)
+
+
+## Questions & Answers
